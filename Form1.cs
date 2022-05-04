@@ -89,6 +89,7 @@ namespace quizapp
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            //Random order to questions
             List<int> questionNumbers = new List<int> { 1, 2, 3 };
             var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
 
@@ -143,17 +144,15 @@ namespace quizapp
 
             switch (i)
             {
+                //QUESTIONS
                 case 1:
-
-
-
-
+                    
                     button3.Text = "Oikea";
                     button4.Text = "Toimii";
                     button5.Text = "Toimii";
                     button6.Text = "Toimii";
 
-                    correctAnswer = 3;
+                    correctAnswer = 3; //= Button that has correct answer
 
                     break;
 
@@ -184,6 +183,97 @@ namespace quizapp
                     correctAnswer = 6;
 
                     break;
+                case 4:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+                case 5:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+                case 6:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+                case 7:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+                case 8:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+                case 9:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+                case 10:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
             }
 
         }
@@ -195,14 +285,54 @@ namespace quizapp
             button2.Visible = false;
             if (qRandomed[listIndex] == 1)
             {
+                //CASE 1 Picture
                 pictureBox1.Image = new Bitmap(@"grus2.jpg");
             }
             if (qRandomed[listIndex] == 2)
             {
+                //CASE 2 Picture
                 pictureBox1.Image = new Bitmap(@"grus.jpg");
             }
-
-
+            if (qRandomed[listIndex] == 3)
+            {
+                //CASE 3 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 4)
+            {
+                //CASE 4 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 5)
+            {
+                //CASE 5 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 6)
+            {
+                //CASE 6 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 7)
+            {
+                //CASE 7 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 8)
+            {
+                //CASE 8 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 9)
+            {
+                //CASE 9 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 10)
+            {
+                //CASE 10 Picture
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
         }
 
         public void button8_Click(object sender, EventArgs e)
@@ -237,14 +367,65 @@ namespace quizapp
         {
             if (qRandomed[listIndex] == 1)
             {
+                //CASE 1 Bird Sound
                 SoundPlayer Sounds = new SoundPlayer(@"Zoothera.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 2)
             {
+                //Case 2 Bird Sound
                 SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
                 Sounds.Play();
             }
+            else if (qRandomed[listIndex] == 3)
+            {
+                //Case 3 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 4)
+            {
+                //Case 4 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 5)
+            {
+                //Case 5 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 6)
+            {
+                //Case 6 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 7)
+            {
+                //Case 7 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 8)
+            {
+                //Case 8 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 9)
+            {
+                //Case 9 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 10)
+            {
+                //Case 10 Bird Sound
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+
         }
 
 
