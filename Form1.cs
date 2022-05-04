@@ -96,8 +96,8 @@ namespace quizapp
 
 
 
-            //buttonShow.Visible = false;
-            //buttonClose.Visible = true;
+            buttonShow.Visible = true; ;
+            buttonClose.Visible = true;
 
             pictureBox1.Visible = true;
 
@@ -105,7 +105,7 @@ namespace quizapp
             if (qRandomed[listIndex] == 1)
             {
                 //CASE 1 Picture
-                pictureBox1.Image = new Bitmap(@"grus2.jpg");
+                pictureBox3.Image = new Bitmap(@"grus2.jpg");
             }
             if (qRandomed[listIndex] == 2)
             {
