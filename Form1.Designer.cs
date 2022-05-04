@@ -29,13 +29,11 @@ namespace quizapp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.buttonPlay = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
             this.pbox1 = new System.Windows.Forms.PictureBox();
             this.buttonShow = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,11 +106,6 @@ namespace quizapp
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 60;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -136,7 +129,6 @@ namespace quizapp
         private System.Windows.Forms.PictureBox pbox1;
         private System.Windows.Forms.Button buttonShow;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.Timer timer1;
     }
 }
 

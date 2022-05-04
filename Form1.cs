@@ -13,18 +13,11 @@ namespace quizapp
 {
     public partial class Form1 : Form
     {
-        System.Timers.Timer timer;
-
         public Form1()
         {
-            
             InitializeComponent();
         }
         
-
-       
-
-
         SoundPlayer splayer = new SoundPlayer();
 
         //Play
@@ -53,7 +46,7 @@ namespace quizapp
         }
 
        
-
+        //Show and hide answers image
         private void buttonShow_Click(object sender, EventArgs e)
         {
             pbox1.Image = Image.FromFile("sarvipollo.jpg");
