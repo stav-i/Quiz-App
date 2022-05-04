@@ -90,7 +90,7 @@ namespace quizapp
         private void button1_Click_1(object sender, EventArgs e)
         {
             //Random order to questions
-            List<int> questionNumbers = new List<int> { 1, 2, 3 };
+            List<int> questionNumbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
 
             qRandomed = randomList.ToArray();
