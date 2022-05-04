@@ -229,9 +229,9 @@ namespace quizapp
                 case 1:
                     
                     button3.Text = "Oikea";
+                    button2.Text = "Toimii";
                     button4.Text = "Toimii";
                     button5.Text = "Toimii";
-                    button6.Text = "Toimii";
 
                     correctAnswer = 3; //= Button that has correct answer
 
@@ -243,9 +243,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii2";
+                    button2.Text = "Toimii2";
                     button4.Text = "Toimii2";
                     button5.Text = "Toimii2";
-                    button6.Text = "Toimii2";
 
                     correctAnswer = 5;
 
@@ -257,9 +257,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -270,9 +270,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -283,9 +283,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -296,9 +296,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -309,9 +309,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -322,9 +322,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -335,9 +335,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
@@ -348,9 +348,9 @@ namespace quizapp
                     button2.Visible = true;
 
                     button3.Text = "Toimii3";
+                    button2.Text = "Toimii3";
                     button4.Text = "Toimii3";
                     button5.Text = "Toimii3";
-                    button6.Text = "Toimii3";
 
                     correctAnswer = 6;
 
