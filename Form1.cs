@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace quizapp
 {
@@ -15,6 +16,32 @@ namespace quizapp
         public Form1()
         {
             InitializeComponent();
+            
         }
+
+
+        SoundPlayer splayer = new SoundPlayer();
+
+        //Play
+        public void buttonPlay_Click(object sender, EventArgs e)
+        {
+            // Play nappi häviää ja Stop nappi tulee näkyviin
+            SoundPlayer splayer = new SoundPlayer("harmaalokki.wav");
+            splayer.Play();
+            buttonPlay.Visible = false;
+            buttonStop.Visible = true;
+            
+        }
+        //Stop
+        public void buttonStop_Click(object sender, EventArgs e)
+        {
+            //Stop nappi häviää painettaessa ja Play nappi tulee näkyviin
+
+            splayer.Stop();
+            buttonStop.Visible = false;
+            buttonPlay.Visible = true;
+            
+        }
+
     }
 }
