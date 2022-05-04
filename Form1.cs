@@ -24,10 +24,8 @@ namespace quizapp
         public Form1()
         {
             InitializeComponent();
-            label3.Text = TotalScore.ToString();
 
         }
-        //perse
 
 
 
@@ -103,14 +101,11 @@ namespace quizapp
             button5.Visible = true;
             button6.Visible = true;
             button7.Visible = true;
-            label2.Visible = true;
-            button8.Visible = true;
-            button8.Enabled = true;
+            
             TotalScore = 0;
             questionNum = 0;
             listIndex = 0;
-            label2.Text = "";
-            label3.Text = TotalScore.ToString();
+            
             button3.Enabled = true;
             button4.Enabled = true;
             button5.Enabled = true;
@@ -134,7 +129,7 @@ namespace quizapp
 
 
 
-            label3.Text = TotalScore.ToString();
+            
 
 
 
