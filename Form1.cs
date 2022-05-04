@@ -14,14 +14,23 @@ namespace quizapp
 {
     public partial class Form1 : Form
     {
+        int[] qRandomed;
+        int listIndex;
+        int TotalScore = 0;
+        int correctAnswer;
+        int questionNum = 0;
+        //int totalQuestions = 3;
+        int buttonTag;
         public Form1()
         {
             InitializeComponent();
+            label3.Text = TotalScore.ToString();
+
         }
 
 
-        
-       
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Visible = false;
@@ -70,6 +79,177 @@ namespace quizapp
             buttonShow.Visible = true;
             buttonClose.Visible = false;
         }
+
+
+
+
+
+
+        //UUSI KOODI
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            List<int> questionNumbers = new List<int> { 1, 2, 3 };
+            var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
+
+            qRandomed = randomList.ToArray();
+
+            questions(qRandomed[0]);
+            button1.Visible = false;
+            button2.Visible = true;
+            button3.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button6.Visible = true;
+            button7.Visible = true;
+            label2.Visible = true;
+            button8.Visible = true;
+            button8.Enabled = true;
+            TotalScore = 0;
+            questionNum = 0;
+            listIndex = 0;
+            label2.Text = "";
+            label3.Text = TotalScore.ToString();
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+
+        }
+        private void CheckAnswer(object sender, EventArgs e)
+        {
+            var senderObject = (Button)sender;
+
+            buttonTag = Convert.ToInt32(senderObject.Tag);
+
+            if (buttonTag == correctAnswer)
+            {
+                TotalScore++;
+            }
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+
+
+
+            label3.Text = TotalScore.ToString();
+
+
+
+        }
+        private void questions(int i)
+        {
+
+            switch (i)
+            {
+                case 1:
+
+
+
+
+                    button3.Text = "Oikea";
+                    button4.Text = "Toimii";
+                    button5.Text = "Toimii";
+                    button6.Text = "Toimii";
+
+                    correctAnswer = 3;
+
+                    break;
+
+                case 2:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii2";
+                    button4.Text = "Toimii2";
+                    button5.Text = "Toimii2";
+                    button6.Text = "Toimii2";
+
+                    correctAnswer = 5;
+
+                    break;
+
+                case 3:
+
+                    pictureBox1.Visible = false;
+                    button2.Visible = true;
+
+                    button3.Text = "Toimii3";
+                    button4.Text = "Toimii3";
+                    button5.Text = "Toimii3";
+                    button6.Text = "Toimii3";
+
+                    correctAnswer = 6;
+
+                    break;
+            }
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = true;
+
+            button2.Visible = false;
+            if (qRandomed[listIndex] == 1)
+            {
+                pictureBox1.Image = new Bitmap(@"grus2.jpg");
+            }
+            if (qRandomed[listIndex] == 2)
+            {
+                pictureBox1.Image = new Bitmap(@"grus.jpg");
+            }
+
+
+        }
+
+        public void button8_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
+            button2.Visible = true;
+            if (questionNum < (listIndex - 1))
+            {
+                button8.Enabled = false;
+
+                label2.Text = "Game over, you got " + TotalScore + " points";
+                TotalScore = 0;
+                button1.Visible = true;
+                button1.Text = "Start a new game?";
+            }
+            else
+            {
+                listIndex++;
+                questions(qRandomed[listIndex]);
+
+                button3.Enabled = true;
+                button4.Enabled = true;
+                button5.Enabled = true;
+                button6.Enabled = true;
+            }
+
+
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (qRandomed[listIndex] == 1)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"Zoothera.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 2)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                Sounds.Play();
+            }
+        }
+
+
+
+
     }
     }
 
