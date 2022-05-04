@@ -27,7 +27,7 @@ namespace quizapp
             label3.Text = TotalScore.ToString();
 
         }
-
+        //perse
 
 
 
