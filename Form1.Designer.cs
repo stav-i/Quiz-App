@@ -29,8 +29,14 @@ namespace quizapp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonPlay = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
+            this.pbox1 = new System.Windows.Forms.PictureBox();
+            this.buttonShow = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonPlay
@@ -44,7 +50,7 @@ namespace quizapp
             this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlay.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlay.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonPlay.Location = new System.Drawing.Point(303, 112);
+            this.buttonPlay.Location = new System.Drawing.Point(545, 28);
             this.buttonPlay.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(197, 155);
@@ -64,7 +70,7 @@ namespace quizapp
             this.buttonStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStop.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStop.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonStop.Location = new System.Drawing.Point(303, 112);
+            this.buttonStop.Location = new System.Drawing.Point(545, 28);
             this.buttonStop.Margin = new System.Windows.Forms.Padding(0);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(197, 155);
@@ -74,15 +80,52 @@ namespace quizapp
             this.buttonStop.UseVisualStyleBackColor = false;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
+            // pbox1
+            // 
+            this.pbox1.Location = new System.Drawing.Point(36, 28);
+            this.pbox1.Name = "pbox1";
+            this.pbox1.Size = new System.Drawing.Size(393, 239);
+            this.pbox1.TabIndex = 3;
+            this.pbox1.TabStop = false;
+            // 
+            // buttonShow
+            // 
+            this.buttonShow.Location = new System.Drawing.Point(545, 571);
+            this.buttonShow.Name = "buttonShow";
+            this.buttonShow.Size = new System.Drawing.Size(119, 82);
+            this.buttonShow.TabIndex = 4;
+            this.buttonShow.Text = "Show Answer";
+            this.buttonShow.UseVisualStyleBackColor = true;
+            this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Location = new System.Drawing.Point(545, 571);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(119, 82);
+            this.buttonClose.TabIndex = 5;
+            this.buttonClose.Text = "Close Answer";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 60;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 665);
+            this.Controls.Add(this.buttonShow);
+            this.Controls.Add(this.pbox1);
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.buttonStop);
+            this.Controls.Add(this.buttonClose);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pbox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -90,6 +133,10 @@ namespace quizapp
         #endregion
         private System.Windows.Forms.Button buttonPlay;
         private System.Windows.Forms.Button buttonStop;
+        private System.Windows.Forms.PictureBox pbox1;
+        private System.Windows.Forms.Button buttonShow;
+        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
