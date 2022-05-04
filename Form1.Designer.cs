@@ -48,6 +48,7 @@ namespace quizapp
             this.button7 = new System.Windows.Forms.Button();
             this.buttonShow = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -203,12 +204,21 @@ namespace quizapp
             this.buttonClose.Text = "Hide answer";
             this.buttonClose.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(259, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(920, 561);
+            this.ClientSize = new System.Drawing.Size(954, 563);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonShow);
             this.Controls.Add(this.button7);
@@ -223,6 +233,7 @@ namespace quizapp
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -238,6 +249,7 @@ namespace quizapp
       
 
         #endregion
+
 
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Timer timer1;
@@ -255,5 +267,8 @@ namespace quizapp
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button buttonShow;
         private System.Windows.Forms.Button buttonClose;
+
+        private System.Windows.Forms.Label label1;
+
     }
 }

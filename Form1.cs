@@ -19,6 +19,7 @@ namespace quizapp
             InitializeComponent();
         }
 
+
         
        
         private void button1_Click(object sender, EventArgs e)
@@ -69,8 +70,6 @@ namespace quizapp
             buttonShow.Visible = true;
             buttonClose.Visible = false;
         }
-
-       
     }
     }
 
