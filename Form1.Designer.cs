@@ -48,7 +48,6 @@ namespace quizapp
             this.buttonShow = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -224,20 +223,11 @@ namespace quizapp
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "label2";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox2.Location = new System.Drawing.Point(653, 110);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(243, 126);
             this.pictureBox2.TabIndex = 16;
@@ -250,7 +240,6 @@ namespace quizapp
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(955, 562);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonShow);
             this.Controls.Add(this.button7);
@@ -299,7 +288,6 @@ namespace quizapp
         private System.Windows.Forms.Button buttonClose;
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

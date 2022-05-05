@@ -249,7 +249,6 @@ namespace quizapp
             {
                 
                 listIndex++;
-                label2.Text = listIndex.ToString();
                 questions(qRandomed[listIndex]);
 
                 button3.Enabled = true;
@@ -272,7 +271,6 @@ namespace quizapp
 
             pictureBox2.Visible = true;
 
-            //button2.Visible = false;
             if (qRandomed[listIndex] == 1)
             {
                 pictureBox2.Image = new Bitmap(@"harakka.jpg");
