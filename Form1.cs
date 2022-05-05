@@ -23,6 +23,7 @@ namespace quizapp
         public Form1()
         {
             InitializeComponent();
+            pictureBox2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -252,16 +253,16 @@ namespace quizapp
                 questions(qRandomed[listIndex]);
 
                 button3.Enabled = true;
+                button2.Enabled = true;
                 button4.Enabled = true;
                 button5.Enabled = true;
-                button6.Enabled = true;
             }
 
         }
 
         private void buttonShow_Click_1(object sender, EventArgs e)
         {
-            pictureBox2.Size = new Size(250, 200);
+            pictureBox2.Size = new Size(200, 200);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -273,42 +274,52 @@ namespace quizapp
 
             if (qRandomed[listIndex] == 1)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"harakka.jpg");
             }
             if (qRandomed[listIndex] == 2)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Harmaalokki.jpg");
             }
             if (qRandomed[listIndex] == 3)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
             }
             if (qRandomed[listIndex] == 4)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Kirjorastas.jpg");
             }
             if (qRandomed[listIndex] == 5)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Kurki.jpg");
             }
             if (qRandomed[listIndex] == 6)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Palokarki.jpg");
             }
             if (qRandomed[listIndex] == 7)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Ruisraakka.jpg");
             }
             if (qRandomed[listIndex] == 8)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Sarvipollo.jpg");
             }
             if (qRandomed[listIndex] == 9)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Talitiainen.jpg");
             }
             if (qRandomed[listIndex] == 10)
             {
+                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Varpunen.jpg");
             }
         }
