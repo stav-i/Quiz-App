@@ -260,61 +260,6 @@ namespace quizapp
 
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            if (qRandomed[listIndex] == 1)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"harakka.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 2)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"harmaalokki.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 3)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"huuhkaja.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 4)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"kirjorastas.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 5)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"kurki.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 6)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"palokarki.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 7)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"ruisraakka.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 8)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"sarvipollo.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 9)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"talitiainen.wav");
-                Sounds.Play();
-            }
-            else if (qRandomed[listIndex] == 10)
-            {
-                SoundPlayer Sounds = new SoundPlayer(@"varpunen.wav");
-                Sounds.Play();
-            }
-
-        }
-
         private void buttonShow_Click_1(object sender, EventArgs e)
         {
             pictureBox2.Size = new Size(250, 200);
@@ -375,6 +320,60 @@ namespace quizapp
             pictureBox2.Visible = false;
             buttonShow.Visible = true;
             buttonClose.Visible = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (qRandomed[listIndex] == 1)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"harakka.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 2)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"harmaalokki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 3)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"huuhkaja.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 4)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"kirjorastas.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 5)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"kurki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 6)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"palokarki.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 7)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"ruisraakka.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 8)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"sarvipollo.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 9)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"talitiainen.wav");
+                Sounds.Play();
+            }
+            else if (qRandomed[listIndex] == 10)
+            {
+                SoundPlayer Sounds = new SoundPlayer(@"varpunen.wav");
+                Sounds.Play();
+            }
         }
     }
     }
