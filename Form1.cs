@@ -91,7 +91,8 @@ namespace quizapp
             {
                 //QUESTIONS
                 case 1:
-                    
+                    //harakka
+
                     button3.Text = "Oikea";
                     button2.Text = "Toimii";
                     button4.Text = "Toimii";
@@ -102,6 +103,7 @@ namespace quizapp
                     break;
 
                 case 2:
+                    //Harmaalokki
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -116,6 +118,7 @@ namespace quizapp
                     break;
 
                 case 3:
+                    //Huuhkaja
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -129,6 +132,7 @@ namespace quizapp
 
                     break;
                 case 4:
+                    //Kirjorastas
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -142,6 +146,7 @@ namespace quizapp
 
                     break;
                 case 5:
+                    //Kurki
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -155,6 +160,7 @@ namespace quizapp
 
                     break;
                 case 6:
+                    //Palokarki
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -168,6 +174,7 @@ namespace quizapp
 
                     break;
                 case 7:
+                    //Ruisraakka
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -181,6 +188,7 @@ namespace quizapp
 
                     break;
                 case 8:
+                    //Sarvipollo
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -194,6 +202,7 @@ namespace quizapp
 
                     break;
                 case 9:
+                    //Talitiainen
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
@@ -207,6 +216,7 @@ namespace quizapp
 
                     break;
                 case 10:
+                    //Varpunen
 
                     pictureBox1.Visible = false;
                     button2.Visible = true;
