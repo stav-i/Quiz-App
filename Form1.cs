@@ -18,36 +18,15 @@ namespace quizapp
         int listIndex;
         int TotalScore = 0;
         int correctAnswer;
-        int questionNum = 0;
         int totalQuestions = 10;
         int buttonTag;
         public Form1()
         {
             InitializeComponent();
-            //label3.Text = TotalScore.ToString();
-
         }
-       
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //textBox1.Visible = false;
-            //textBox2.Visible = false;
-            //pictureBox1.Visible = true;
-            //button1.Visible = false;
-            //textBox3.Visible = false;
-            //button7.Visible = true;
-            //button6.Visible = true;
-            //button2.Visible = true;
-            //button3.Visible = true;
-            //button4.Visible = true;
-            //button5.Visible = true;
-            //buttonShow.Visible = true;
-            //pictureBox3.Visible = true;
-
-
             List<int> questionNumbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
 
@@ -61,20 +40,17 @@ namespace quizapp
             button5.Visible = true;
             button6.Visible = true;
             button7.Visible = true;
-            //label2.Visible = true;
             button7.Visible = true;
             button7.Enabled = true;
             TotalScore = 0;
-            questionNum = 0;
             listIndex = 0;
-            //label2.Text = "";
-            //label3.Text = TotalScore.ToString();
             button3.Enabled = true;
             button4.Enabled = true;
             button5.Enabled = true;
             button6.Enabled = true;
             buttonShow.Visible = true;
             buttonClose.Visible = true;
+            textBox3.Visible = false;
 
         }
 
@@ -89,117 +65,7 @@ namespace quizapp
             buttonShow.Visible = false;
             buttonClose.Visible = false;
         }
-        private void buttonShow_Click(object sender, EventArgs e)
-        {
-            //pictureBox3.Visible = true;
-            
-            //pictureBox2.Size = new Size(250, 200);
-            //pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
-
-            //buttonShow.Visible = true; 
-            //buttonClose.Visible = true;
-
-            //pictureBox2.Visible = true;
-
-            ////button2.Visible = false;
-            //if (qRandomed[listIndex] == 1)
-            //{
-            //    //CASE 1 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus2.jpg");
-            //}
-            //if (qRandomed[listIndex] == 2)
-            //{
-            //    //CASE 2 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 3)
-            //{
-            //    //CASE 3 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 4)
-            //{
-            //    //CASE 4 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 5)
-            //{
-            //    //CASE 5 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 6)
-            //{
-            //    //CASE 6 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 7)
-            //{
-            //    //CASE 7 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 8)
-            //{
-            //    //CASE 8 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 9)
-            //{
-            //    //CASE 9 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-            //if (qRandomed[listIndex] == 10)
-            //{
-            //    //CASE 10 Picture
-            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
-            //}
-        }
-
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            //pictureBox2.Visible = false;
-            //buttonShow.Visible = true;
-            //buttonClose.Visible = false;
-        }
-
-
-
-
-
-
-        //UUSI KOODI
-
-        //private void button1_Click_1(object sender, EventArgs e)
-        //{
-        //    //Random order to questions
-        //    List<int> questionNumbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        //    var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
-
-        //    qRandomed = randomList.ToArray();
-
-        //    questions(qRandomed[0]);
-        //    button1.Visible = false;
-        //    button2.Visible = true;
-        //    button3.Visible = true;
-        //    button4.Visible = true;
-        //    button5.Visible = true;
-        //    button6.Visible = true;
-        //    button7.Visible = true;
-        //    label2.Visible = true;
-        //    button8.Visible = true;
-        //    button8.Enabled = true;
-        //    TotalScore = 0;
-        //    questionNum = 0;
-        //    listIndex = 0;
-        //    label2.Text = "";
-        //    label3.Text = TotalScore.ToString();
-        //    button3.Enabled = true;
-        //    button4.Enabled = true;
-        //    button5.Enabled = true;
-        //    button6.Enabled = true;
-
-        //}
+        
         private void CheckAnswer(object sender, EventArgs e)
         {
             var senderObject = (Button)sender;
@@ -215,11 +81,7 @@ namespace quizapp
             button5.Enabled = false;
             button6.Enabled = false;
 
-
-
             textBox1.Text = TotalScore.ToString();
-
-
 
         }
         private void questions(int i)
@@ -361,63 +223,6 @@ namespace quizapp
 
         }
 
-        //private void button7_Click(object sender, EventArgs e)
-        //{
-        //    pictureBox1.Visible = true;
-
-        //    button2.Visible = false;
-        //    if (qRandomed[listIndex] == 1)
-        //    {
-        //        //CASE 1 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus2.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 2)
-        //    {
-        //        //CASE 2 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 3)
-        //    {
-        //        //CASE 3 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 4)
-        //    {
-        //        //CASE 4 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 5)
-        //    {
-        //        //CASE 5 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 6)
-        //    {
-        //        //CASE 6 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 7)
-        //    {
-        //        //CASE 7 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 8)
-        //    {
-        //        //CASE 8 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 9)
-        //    {
-        //        //CASE 9 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //    if (qRandomed[listIndex] == 10)
-        //    {
-        //        //CASE 10 Picture
-        //        pictureBox1.Image = new Bitmap(@"grus.jpg");
-        //    }
-        //}
-
         public void button7_Click(object sender, EventArgs e)
         {
             pictureBox1.Visible = false;
@@ -444,8 +249,6 @@ namespace quizapp
                 button5.Enabled = true;
                 button6.Enabled = true;
             }
-
-
 
         }
 
