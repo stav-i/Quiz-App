@@ -422,6 +422,7 @@ namespace quizapp
         {
             pictureBox1.Visible = false;
             button2.Visible = true;
+            pictureBox2.Visible = false;
             if (totalQuestions == (listIndex + 1))
             {
                 button7.Enabled = false;
