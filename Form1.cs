@@ -54,6 +54,7 @@ namespace quizapp
             button7.Visible = true;
             button7.Visible = true;
             button7.Enabled = true;
+            
             TotalScore = 0;
             listIndex = 0;
             button3.Enabled = true;
@@ -74,6 +75,7 @@ namespace quizapp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            button8.Visible = false;
             button7.Visible = false;
             button6.Visible = false;
             button2.Visible = false;
@@ -256,6 +258,9 @@ namespace quizapp
             pictureBox2.Visible = true;
             pictureBox2.Image = new Bitmap(@"birddd.png");
             button2.Visible = true;
+            buttonShow.Visible = true;
+            button8.Visible = true;
+            button6.Visible = true;
             //pictureBox2.Visible = false;
             buttonClose.Visible = false;
             label2.Visible = false;
@@ -311,7 +316,7 @@ namespace quizapp
             label2.Text = correctBird;
             label2.Visible = true;
 
-            buttonShow.Visible = true;
+            buttonShow.Visible = false;
             buttonClose.Visible = true;
 
             pictureBox2.Visible = true;
@@ -361,6 +366,7 @@ namespace quizapp
         private void buttonClose_Click_1(object sender, EventArgs e)
         {
             
+
             buttonShow.Visible = true;
             buttonClose.Visible = false;
             label2.Visible = false;
@@ -370,6 +376,8 @@ namespace quizapp
 
         private void button6_Click(object sender, EventArgs e)
         {
+            button8.Visible = true;
+            button6.Visible = false;
             if (qRandomed[listIndex] == 1)
             {
                 SoundPlayer Sounds = new SoundPlayer(@"harakka.wav");
@@ -420,6 +428,17 @@ namespace quizapp
                 SoundPlayer Sounds = new SoundPlayer(@"varpunen.wav");
                 Sounds.Play();
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            SoundPlayer splayer = new SoundPlayer();
+            splayer.Stop();
+
+            button8.Visible = false;
+            button6.Visible = true;
+
+            
         }
     }
     }

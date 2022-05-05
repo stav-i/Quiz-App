@@ -51,6 +51,7 @@ namespace quizapp
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -244,13 +245,13 @@ namespace quizapp
             this.buttonShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(60)))), ((int)(((byte)(64)))));
             this.buttonShow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonShow.FlatAppearance.BorderSize = 0;
-            this.buttonShow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonShow.Font = new System.Drawing.Font("Unispace", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonShow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(230)))), ((int)(((byte)(219)))));
-            this.buttonShow.Location = new System.Drawing.Point(13, 278);
+            this.buttonShow.Location = new System.Drawing.Point(9, 297);
             this.buttonShow.Margin = new System.Windows.Forms.Padding(0);
             this.buttonShow.Name = "buttonShow";
-            this.buttonShow.Size = new System.Drawing.Size(221, 63);
+            this.buttonShow.Size = new System.Drawing.Size(221, 65);
             this.buttonShow.TabIndex = 13;
             this.buttonShow.Text = "Show answer";
             this.buttonShow.UseVisualStyleBackColor = false;
@@ -261,10 +262,10 @@ namespace quizapp
             this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(60)))), ((int)(((byte)(64)))));
             this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonClose.FlatAppearance.BorderSize = 0;
-            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Unispace", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(230)))), ((int)(((byte)(219)))));
-            this.buttonClose.Location = new System.Drawing.Point(13, 346);
+            this.buttonClose.Location = new System.Drawing.Point(9, 297);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(0);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(221, 65);
@@ -285,8 +286,9 @@ namespace quizapp
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(230)))), ((int)(((byte)(219)))));
             this.pictureBox2.Location = new System.Drawing.Point(240, 94);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(20);
             this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(10);
             this.pictureBox2.Size = new System.Drawing.Size(805, 329);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -312,6 +314,25 @@ namespace quizapp
             this.label3.TabIndex = 18;
             this.label3.Text = "label3";
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(99)))));
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Unispace", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(230)))), ((int)(((byte)(219)))));
+            this.button8.Location = new System.Drawing.Point(13, 154);
+            this.button8.Margin = new System.Windows.Forms.Padding(0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(221, 119);
+            this.button8.TabIndex = 19;
+            this.button8.Text = "Stop ";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -319,11 +340,9 @@ namespace quizapp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(230)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(1176, 794);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonShow);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
@@ -335,6 +354,9 @@ namespace quizapp
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.textBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Bird Quiz";
@@ -372,5 +394,6 @@ namespace quizapp
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button8;
     }
 }
