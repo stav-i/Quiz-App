@@ -73,6 +73,8 @@ namespace quizapp
             button4.Enabled = true;
             button5.Enabled = true;
             button6.Enabled = true;
+            buttonShow.Visible = true;
+            buttonClose.Visible = true;
 
         }
 
@@ -96,67 +98,67 @@ namespace quizapp
 
 
 
-            buttonShow.Visible = true; ;
+            buttonShow.Visible = true; 
             buttonClose.Visible = true;
 
-            pictureBox1.Visible = true;
+            pictureBox2.Visible = true;
 
             //button2.Visible = false;
             if (qRandomed[listIndex] == 1)
             {
                 //CASE 1 Picture
-                pictureBox3.Image = new Bitmap(@"grus2.jpg");
+                pictureBox2.Image = new Bitmap(@"grus2.jpg");
             }
             if (qRandomed[listIndex] == 2)
             {
                 //CASE 2 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 3)
             {
                 //CASE 3 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 4)
             {
                 //CASE 4 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 5)
             {
                 //CASE 5 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 6)
             {
                 //CASE 6 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 7)
             {
                 //CASE 7 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 8)
             {
                 //CASE 8 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 9)
             {
                 //CASE 9 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
             if (qRandomed[listIndex] == 10)
             {
                 //CASE 10 Picture
-                pictureBox1.Image = new Bitmap(@"grus.jpg");
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
             }
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            pictureBox3.Visible = false;
+            pictureBox2.Visible = false;
             buttonShow.Visible = true;
             buttonClose.Visible = false;
         }
