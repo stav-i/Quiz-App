@@ -79,7 +79,7 @@ namespace quizapp
             button3.Enabled = false;
             button4.Enabled = false;
             button5.Enabled = false;
-            button6.Enabled = false;
+            button2.Enabled = false;
 
         }
         private void questions(int i)
@@ -257,7 +257,7 @@ namespace quizapp
                 button3.Enabled = true;
                 button4.Enabled = true;
                 button5.Enabled = true;
-                button6.Enabled = true;
+                button2.Enabled = true;
             }
 
         }
