@@ -41,6 +41,8 @@ namespace quizapp
             pictureBox2.Visible = true;
             pictureBox2.Image = new Bitmap(@"birddd.png");
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            textBox1.Visible=true;
            
             questions(qRandomed[0]);
             button1.Visible = false;
