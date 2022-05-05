@@ -73,6 +73,7 @@ namespace quizapp
             button4.Enabled = true;
             button5.Enabled = true;
             button6.Enabled = true;
+            textBox3.Visible = false;
 
         }
 
