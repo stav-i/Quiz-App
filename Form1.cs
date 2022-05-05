@@ -80,7 +80,7 @@ namespace quizapp
             button3.Enabled = false;
             button4.Enabled = false;
             button5.Enabled = false;
-            button6.Enabled = false;
+            button2.Enabled = false;
 
         }
         private void questions(int i)
@@ -234,9 +234,12 @@ namespace quizapp
 
         public void button7_Click(object sender, EventArgs e)
         {
+            SoundPlayer Sounds = new SoundPlayer();
+            Sounds.Stop();
             pictureBox1.Visible = false;
             button2.Visible = true;
             pictureBox2.Visible = false;
+            
             if (totalQuestions == (listIndex + 1))
             {
                 button7.Enabled = false;
@@ -256,6 +259,7 @@ namespace quizapp
                 button2.Enabled = true;
                 button4.Enabled = true;
                 button5.Enabled = true;
+                button2.Enabled = true;
             }
 
         }
