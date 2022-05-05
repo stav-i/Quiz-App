@@ -297,7 +297,12 @@ namespace quizapp
                 buttonClose.Visible=false;
                 button6.Visible=false;
                 button8.Visible=false;
-                
+                button2.Visible=false;
+                button3.Visible=false;
+                button4.Visible=false;
+                button5.Visible=false;
+                button7.Visible=false;
+                label2.Visible=false;
             }
             else
             {
