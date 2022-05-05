@@ -197,6 +197,7 @@ namespace quizapp
             this.buttonShow.TabIndex = 13;
             this.buttonShow.Text = "Show answer";
             this.buttonShow.UseVisualStyleBackColor = true;
+            this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click_1);
             // 
             // buttonClose
             // 
@@ -207,6 +208,7 @@ namespace quizapp
             this.buttonClose.TabIndex = 14;
             this.buttonClose.Text = "Hide answer";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click_1);
             // 
             // label1
             // 
@@ -230,6 +232,7 @@ namespace quizapp
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox2.Location = new System.Drawing.Point(490, 89);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(182, 102);

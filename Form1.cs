@@ -92,75 +92,75 @@ namespace quizapp
         private void buttonShow_Click(object sender, EventArgs e)
         {
             //pictureBox3.Visible = true;
-            //pictureBox3.Image = Image.FromFile("Sarvipollo.jpg");
-            //pictureBox3.Size = new Size(250, 200);
-            //pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            
+            //pictureBox2.Size = new Size(250, 200);
+            //pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
 
-            buttonShow.Visible = true; 
-            buttonClose.Visible = true;
+            //buttonShow.Visible = true; 
+            //buttonClose.Visible = true;
 
-            pictureBox2.Visible = true;
+            //pictureBox2.Visible = true;
 
-            //button2.Visible = false;
-            if (qRandomed[listIndex] == 1)
-            {
-                //CASE 1 Picture
-                pictureBox2.Image = new Bitmap(@"grus2.jpg");
-            }
-            if (qRandomed[listIndex] == 2)
-            {
-                //CASE 2 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 3)
-            {
-                //CASE 3 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 4)
-            {
-                //CASE 4 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 5)
-            {
-                //CASE 5 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 6)
-            {
-                //CASE 6 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 7)
-            {
-                //CASE 7 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 8)
-            {
-                //CASE 8 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 9)
-            {
-                //CASE 9 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
-            if (qRandomed[listIndex] == 10)
-            {
-                //CASE 10 Picture
-                pictureBox2.Image = new Bitmap(@"grus.jpg");
-            }
+            ////button2.Visible = false;
+            //if (qRandomed[listIndex] == 1)
+            //{
+            //    //CASE 1 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus2.jpg");
+            //}
+            //if (qRandomed[listIndex] == 2)
+            //{
+            //    //CASE 2 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 3)
+            //{
+            //    //CASE 3 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 4)
+            //{
+            //    //CASE 4 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 5)
+            //{
+            //    //CASE 5 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 6)
+            //{
+            //    //CASE 6 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 7)
+            //{
+            //    //CASE 7 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 8)
+            //{
+            //    //CASE 8 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 9)
+            //{
+            //    //CASE 9 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
+            //if (qRandomed[listIndex] == 10)
+            //{
+            //    //CASE 10 Picture
+            //    pictureBox2.Image = new Bitmap(@"grus.jpg");
+            //}
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            pictureBox2.Visible = false;
-            buttonShow.Visible = true;
-            buttonClose.Visible = false;
+            //pictureBox2.Visible = false;
+            //buttonShow.Visible = true;
+            //buttonClose.Visible = false;
         }
 
 
@@ -513,9 +513,77 @@ namespace quizapp
 
         }
 
+        private void buttonShow_Click_1(object sender, EventArgs e)
+        {
+            pictureBox2.Size = new Size(250, 200);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
 
+            buttonShow.Visible = true;
+            buttonClose.Visible = true;
+
+            pictureBox2.Visible = true;
+
+            //button2.Visible = false;
+            if (qRandomed[listIndex] == 1)
+            {
+                //CASE 1 Picture
+                pictureBox2.Image = new Bitmap(@"grus2.jpg");
+            }
+            if (qRandomed[listIndex] == 2)
+            {
+                //CASE 2 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 3)
+            {
+                //CASE 3 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 4)
+            {
+                //CASE 4 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 5)
+            {
+                //CASE 5 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 6)
+            {
+                //CASE 6 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 7)
+            {
+                //CASE 7 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 8)
+            {
+                //CASE 8 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 9)
+            {
+                //CASE 9 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+            if (qRandomed[listIndex] == 10)
+            {
+                //CASE 10 Picture
+                pictureBox2.Image = new Bitmap(@"grus.jpg");
+            }
+        }
+
+        private void buttonClose_Click_1(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = false;
+            buttonShow.Visible = true;
+            buttonClose.Visible = false;
+        }
     }
     }
 
