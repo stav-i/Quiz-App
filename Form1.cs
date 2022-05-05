@@ -20,12 +20,14 @@ namespace quizapp
         int correctAnswer;
         int totalQuestions = 10;
         int buttonTag;
+        int currentQuestionNumber = 1;
         string correctBird;
         public Form1()
         {
             InitializeComponent();
             pictureBox2.Visible = false;
             label2.Visible = false;
+            label3.Visible = false;
             //pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
 
         }
@@ -62,8 +64,10 @@ namespace quizapp
             textBox2.Visible = false;
             textBox1.Visible = false;
             label2.Visible = false;
-            
 
+            currentQuestionNumber = 1;
+            label3.Visible = true;
+            label3.Text = currentQuestionNumber.ToString() + "/10";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -253,7 +257,13 @@ namespace quizapp
             //pictureBox2.Visible = false;
             buttonClose.Visible = false;
             label2.Visible = false;
+            if (currentQuestionNumber < 10)
+            {
+                currentQuestionNumber++;
+                label3.Text = currentQuestionNumber.ToString() + "/10";
+            }
             
+
             if (totalQuestions == (listIndex + 1))
             {
                 button7.Enabled = false;
@@ -283,7 +293,6 @@ namespace quizapp
                 
                 listIndex++;
                 questions(qRandomed[listIndex]);
-
                 button3.Enabled = true;
                 button2.Enabled = true;
                 button4.Enabled = true;
