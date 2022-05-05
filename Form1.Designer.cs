@@ -172,12 +172,12 @@ namespace quizapp
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(53, 94);
+            this.button6.Location = new System.Drawing.Point(12, 81);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(235, 142);
+            this.button6.Size = new System.Drawing.Size(221, 127);
             this.button6.TabIndex = 9;
-            this.button6.Text = "ääni";
+            this.button6.Text = "Play Sound";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
