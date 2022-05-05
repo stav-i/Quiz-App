@@ -61,11 +61,11 @@ namespace quizapp
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox1.Font = new System.Drawing.Font("Ravie", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(9, 9);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(116, 11);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(663, 75);
+            this.textBox1.Size = new System.Drawing.Size(663, 160);
             this.textBox1.TabIndex = 3;
             this.textBox1.TabStop = false;
             this.textBox1.Text = "Quiz app of birds";
@@ -76,11 +76,11 @@ namespace quizapp
             this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Perpetua", 19.8F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(286, 242);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Location = new System.Drawing.Point(377, 291);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 47);
+            this.textBox2.Size = new System.Drawing.Size(322, 47);
             this.textBox2.TabIndex = 3;
             this.textBox2.TabStop = false;
             this.textBox2.Text = "Play game!";
@@ -91,7 +91,7 @@ namespace quizapp
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(286, 128);
+            this.button1.Location = new System.Drawing.Point(377, 173);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 97);
@@ -103,13 +103,13 @@ namespace quizapp
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Perpetua", 24F);
+            this.textBox3.Font = new System.Drawing.Font("Perpetua", 30F);
             this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(453, 360);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Location = new System.Drawing.Point(629, 474);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 79);
+            this.textBox3.Size = new System.Drawing.Size(219, 140);
             this.textBox3.TabIndex = 3;
             this.textBox3.TabStop = false;
             this.textBox3.Text = "Learn bird species by listening!";
@@ -118,100 +118,108 @@ namespace quizapp
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 318);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 369);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 121);
+            this.pictureBox1.Size = new System.Drawing.Size(292, 219);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(190, 306);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button2.Location = new System.Drawing.Point(286, 431);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(314, 44);
+            this.button2.Size = new System.Drawing.Size(314, 58);
             this.button2.TabIndex = 5;
             this.button2.Tag = "2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.CheckAnswer);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(190, 258);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button3.Location = new System.Drawing.Point(286, 369);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(314, 44);
+            this.button3.Size = new System.Drawing.Size(314, 58);
             this.button3.TabIndex = 6;
             this.button3.Tag = "3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.CheckAnswer);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(190, 354);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button4.Location = new System.Drawing.Point(286, 494);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(314, 44);
+            this.button4.Size = new System.Drawing.Size(314, 58);
             this.button4.TabIndex = 7;
             this.button4.Tag = "4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.CheckAnswer);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(190, 402);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.Location = new System.Drawing.Point(286, 556);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(314, 44);
+            this.button5.Size = new System.Drawing.Size(314, 58);
             this.button5.TabIndex = 8;
             this.button5.Tag = "5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.CheckAnswer);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(9, 66);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button6.Location = new System.Drawing.Point(11, 86);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(166, 103);
             this.button6.TabIndex = 9;
             this.button6.Text = "Play Sound";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(547, 331);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button7.Location = new System.Drawing.Point(654, 369);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 101);
             this.button7.TabIndex = 12;
             this.button7.Text = "Next";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // buttonShow
             // 
+            this.buttonShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonShow.Location = new System.Drawing.Point(10, 196);
-            this.buttonShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonShow.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(166, 51);
             this.buttonShow.TabIndex = 13;
             this.buttonShow.Text = "Show answer";
-            this.buttonShow.UseVisualStyleBackColor = true;
+            this.buttonShow.UseVisualStyleBackColor = false;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click_1);
             // 
             // buttonClose
             // 
+            this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonClose.Location = new System.Drawing.Point(10, 251);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(166, 53);
             this.buttonClose.TabIndex = 14;
             this.buttonClose.Text = "Hide answer";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click_1);
             // 
             // label1
@@ -220,16 +228,15 @@ namespace quizapp
             this.label1.Location = new System.Drawing.Point(194, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(286, 82);
+            this.pictureBox2.Location = new System.Drawing.Point(199, 37);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(319, 143);
+            this.pictureBox2.Size = new System.Drawing.Size(580, 267);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
@@ -238,7 +245,7 @@ namespace quizapp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(716, 457);
+            this.ClientSize = new System.Drawing.Size(882, 645);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonShow);
@@ -254,7 +261,7 @@ namespace quizapp
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -50,8 +50,11 @@ namespace quizapp
             button5.Enabled = true;
             button6.Enabled = true;
             buttonShow.Visible = true;
-            buttonClose.Visible = true;
+            buttonClose.Visible = false;
             textBox3.Visible = false;
+            textBox2.Visible = false;
+            textBox1.Visible = false;
+            
 
         }
 
@@ -239,15 +242,19 @@ namespace quizapp
             pictureBox1.Visible = false;
             button2.Visible = true;
             pictureBox2.Visible = false;
+            buttonClose.Visible = false;
             
             if (totalQuestions == (listIndex + 1))
             {
                 button7.Enabled = false;
-
+                pictureBox2.Visible = false;
                 textBox1.Text = "Game over, you got " + TotalScore + " points";
                 TotalScore = 0;
                 button1.Visible = true;
-                button1.Text = "Start a new game?";
+                textBox2.Visible = true;
+                textBox2.Text = "Start a new game?";
+                textBox1.Visible = true;
+                
             }
             else
             {
@@ -266,7 +273,7 @@ namespace quizapp
 
         private void buttonShow_Click_1(object sender, EventArgs e)
         {
-            pictureBox2.Size = new Size(200, 200);
+           
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -278,53 +285,43 @@ namespace quizapp
 
             if (qRandomed[listIndex] == 1)
             {
-                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"harakka.jpg");
             }
             if (qRandomed[listIndex] == 2)
             {
-                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Harmaalokki.jpg");
             }
             if (qRandomed[listIndex] == 3)
             {
-                pictureBox2.Size = new Size(350, 180);
-                pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
+               pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
             }
             if (qRandomed[listIndex] == 4)
             {
-                pictureBox2.Size = new Size(350, 180);
-                pictureBox2.Image = new Bitmap(@"Kirjorastas.jpg");
+               pictureBox2.Image = new Bitmap(@"Kirjorastas.jpg");
             }
             if (qRandomed[listIndex] == 5)
             {
-                pictureBox2.Size = new Size(350, 180);
-                pictureBox2.Image = new Bitmap(@"Kurki.jpg");
+               pictureBox2.Image = new Bitmap(@"Kurki.jpg");
             }
             if (qRandomed[listIndex] == 6)
             {
-                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Palokarki.jpg");
             }
             if (qRandomed[listIndex] == 7)
             {
-                pictureBox2.Size = new Size(350, 180);
-                pictureBox2.Image = new Bitmap(@"Ruisraakka.jpg");
+               pictureBox2.Image = new Bitmap(@"Ruisraakka.jpg");
             }
             if (qRandomed[listIndex] == 8)
             {
-                pictureBox2.Size = new Size(350, 180);
-                pictureBox2.Image = new Bitmap(@"Sarvipollo.jpg");
+               pictureBox2.Image = new Bitmap(@"Sarvipollo.jpg");
             }
             if (qRandomed[listIndex] == 9)
             {
-                pictureBox2.Size = new Size(350, 180);
                 pictureBox2.Image = new Bitmap(@"Talitiainen.jpg");
             }
             if (qRandomed[listIndex] == 10)
             {
-                pictureBox2.Size = new Size(350, 180);
-                pictureBox2.Image = new Bitmap(@"Varpunen.jpg");
+               pictureBox2.Image = new Bitmap(@"Varpunen.jpg");
             }
         }
 
