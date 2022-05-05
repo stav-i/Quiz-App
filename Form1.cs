@@ -110,7 +110,7 @@ namespace quizapp
                 case 2:
                     //Harmaalokki
 
-                    pictureBox1.Visible = false;
+                   
                     button2.Visible = true;
 
                     button3.Text = "Great Tit";
@@ -125,7 +125,7 @@ namespace quizapp
                 case 3:
                     //Huuhkaja
 
-                    pictureBox1.Visible = false;
+                    
                     button2.Visible = true;
 
                     button3.Text = "Corn Crake";
@@ -139,7 +139,7 @@ namespace quizapp
                 case 4:
                     //Kirjorastas
 
-                    pictureBox1.Visible = false;
+                   
                     button2.Visible = true;
 
                     button3.Text = "White's Thrush";
@@ -153,7 +153,7 @@ namespace quizapp
                 case 5:
                     //Kurki
 
-                    pictureBox1.Visible = false;
+                   
                     button2.Visible = true;
 
                     button3.Text = "Black Woodpecker";
@@ -167,7 +167,7 @@ namespace quizapp
                 case 6:
                     //Palokarki
 
-                    pictureBox1.Visible = false;
+                   
                     button2.Visible = true;
 
                     button3.Text = "European Herring Gull ";
@@ -181,7 +181,6 @@ namespace quizapp
                 case 7:
                     //Ruisraakka
 
-                    pictureBox1.Visible = false;
                     button2.Visible = true;
 
                     button3.Text = "Great Tit";
@@ -195,7 +194,7 @@ namespace quizapp
                 case 8:
                     //Sarvipollo
 
-                    pictureBox1.Visible = false;
+                    
                     button2.Visible = true;
 
                     button3.Text = "Eurasian Magpie";
@@ -209,7 +208,7 @@ namespace quizapp
                 case 9:
                     //Talitiainen
 
-                    pictureBox1.Visible = false;
+                    
                     button2.Visible = true;
 
                     button3.Text = "Great Tit";
@@ -223,7 +222,7 @@ namespace quizapp
                 case 10:
                     //Varpunen
 
-                    pictureBox1.Visible = false;
+                   
                     button2.Visible = true;
 
                     button3.Text = "Corn Crake";
@@ -242,7 +241,7 @@ namespace quizapp
         {
             SoundPlayer Sounds = new SoundPlayer();
             Sounds.Stop();
-            pictureBox1.Visible = false;
+            
             button2.Visible = true;
             pictureBox2.Visible = false;
             buttonClose.Visible = false;
