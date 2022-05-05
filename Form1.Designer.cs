@@ -91,10 +91,10 @@ namespace quizapp
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(377, 173);
+            this.button1.Location = new System.Drawing.Point(377, 148);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 97);
+            this.button1.Size = new System.Drawing.Size(132, 122);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -234,9 +234,9 @@ namespace quizapp
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(199, 37);
+            this.pictureBox2.Location = new System.Drawing.Point(197, 11);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(580, 267);
+            this.pictureBox2.Size = new System.Drawing.Size(651, 293);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
@@ -245,7 +245,7 @@ namespace quizapp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(882, 645);
+            this.ClientSize = new System.Drawing.Size(860, 645);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonShow);

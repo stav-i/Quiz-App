@@ -46,7 +46,7 @@ namespace quizapp
             TotalScore = 0;
             listIndex = 0;
             button3.Enabled = true;
-            button4.Enabled = true;
+            button2.Enabled = true;
             button5.Enabled = true;
             button6.Enabled = true;
             buttonShow.Visible = true;
