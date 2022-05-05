@@ -81,8 +81,6 @@ namespace quizapp
             button5.Enabled = false;
             button6.Enabled = false;
 
-            //textBox1.Text = TotalScore.ToString();
-
         }
         private void questions(int i)
         {
@@ -266,62 +264,52 @@ namespace quizapp
         {
             if (qRandomed[listIndex] == 1)
             {
-                //CASE 1 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Zoothera.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"harakka.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 2)
             {
-                //Case 2 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"harmaalokki.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 3)
             {
-                //Case 3 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"huuhkaja.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 4)
             {
-                //Case 4 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"kirjorastas.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 5)
             {
-                //Case 5 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"kurki.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 6)
             {
-                //Case 6 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"palokarki.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 7)
             {
-                //Case 7 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"ruisraakka.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 8)
             {
-                //Case 8 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"sarvipollo.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 9)
             {
-                //Case 9 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"talitiainen.wav");
                 Sounds.Play();
             }
             else if (qRandomed[listIndex] == 10)
             {
-                //Case 10 Bird Sound
-                SoundPlayer Sounds = new SoundPlayer(@"Kurki.wav");
+                SoundPlayer Sounds = new SoundPlayer(@"varpunen.wav");
                 Sounds.Play();
             }
 
@@ -342,52 +330,42 @@ namespace quizapp
             //button2.Visible = false;
             if (qRandomed[listIndex] == 1)
             {
-                //CASE 1 Picture
                 pictureBox2.Image = new Bitmap(@"harakka.jpg");
             }
             if (qRandomed[listIndex] == 2)
             {
-                //CASE 2 Picture
                 pictureBox2.Image = new Bitmap(@"Harmaalokki.jpg");
             }
             if (qRandomed[listIndex] == 3)
             {
-                //CASE 3 Picture
                 pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
             }
             if (qRandomed[listIndex] == 4)
             {
-                //CASE 4 Picture
                 pictureBox2.Image = new Bitmap(@"Kirjorastas.jpg");
             }
             if (qRandomed[listIndex] == 5)
             {
-                //CASE 5 Picture
                 pictureBox2.Image = new Bitmap(@"Kurki.jpg");
             }
             if (qRandomed[listIndex] == 6)
             {
-                //CASE 6 Picture
                 pictureBox2.Image = new Bitmap(@"Palokarki.jpg");
             }
             if (qRandomed[listIndex] == 7)
             {
-                //CASE 7 Picture
                 pictureBox2.Image = new Bitmap(@"Ruisraakka.jpg");
             }
             if (qRandomed[listIndex] == 8)
             {
-                //CASE 8 Picture
                 pictureBox2.Image = new Bitmap(@"Sarvipollo.jpg");
             }
             if (qRandomed[listIndex] == 9)
             {
-                //CASE 9 Picture
                 pictureBox2.Image = new Bitmap(@"Talitiainen.jpg");
             }
             if (qRandomed[listIndex] == 10)
             {
-                //CASE 10 Picture
                 pictureBox2.Image = new Bitmap(@"Varpunen.jpg");
             }
         }
