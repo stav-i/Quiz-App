@@ -91,10 +91,10 @@ namespace quizapp
                 case 1:
                     //harakka
 
-                    button3.Text = "Oikea";
-                    button2.Text = "Toimii";
-                    button4.Text = "Toimii";
-                    button5.Text = "Toimii";
+                    button3.Text = "Eurasian Magpie";
+                    button2.Text = "Corn Crake";
+                    button4.Text = "House Sparrow";
+                    button5.Text = "European Herring Gull";
 
                     correctAnswer = 3; //= Button that has correct answer
 
@@ -106,10 +106,10 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii2";
-                    button2.Text = "Toimii2";
-                    button4.Text = "Toimii2";
-                    button5.Text = "Toimii2";
+                    button3.Text = "Great Tit";
+                    button2.Text = "Eurasain Eagle-Owl";
+                    button4.Text = "White's Thrush";
+                    button5.Text = "European Herring Gull";
 
                     correctAnswer = 5;
 
@@ -121,12 +121,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "Corn Crake";
+                    button2.Text = "Eurasian Magpie";
+                    button4.Text = "Eurasian Eagla-Owl";
+                    button5.Text = "Long-Eared Owl";
 
-                    correctAnswer = 6;
+                    correctAnswer = 4;
 
                     break;
                 case 4:
@@ -135,12 +135,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "White's Thrush";
+                    button2.Text = "House Sparrow";
+                    button4.Text = "Great Tit";
+                    button5.Text = "Corn Crake";
 
-                    correctAnswer = 6;
+                    correctAnswer = 3;
 
                     break;
                 case 5:
@@ -149,12 +149,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "Black Woodpecker";
+                    button2.Text = "Common Crane";
+                    button4.Text = "Eurasian Magpie";
+                    button5.Text = "European Herring Gull";
 
-                    correctAnswer = 6;
+                    correctAnswer = 2;
 
                     break;
                 case 6:
@@ -163,12 +163,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "European Herring Gull ";
+                    button2.Text = "White's Thrush";
+                    button4.Text = "Eurasian Eagle-Owl";
+                    button5.Text = "Black Woodpecker";
 
-                    correctAnswer = 6;
+                    correctAnswer = 5;
 
                     break;
                 case 7:
@@ -177,12 +177,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "Great Tit";
+                    button2.Text = "Black Woodpecker";
+                    button4.Text = "Corn Crake";
+                    button5.Text = "House Sparrow";
 
-                    correctAnswer = 6;
+                    correctAnswer = 4;
 
                     break;
                 case 8:
@@ -191,12 +191,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "Eurasian Magpie";
+                    button2.Text = "Long-Eared Owl";
+                    button4.Text = "Common Crane";
+                    button5.Text = "European Herring Gull";
 
-                    correctAnswer = 6;
+                    correctAnswer = 2;
 
                     break;
                 case 9:
@@ -205,12 +205,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "Great Tit";
+                    button2.Text = "Long-Eared Owl";
+                    button4.Text = "House Sparrow";
+                    button5.Text = "Black Woodpecker";
 
-                    correctAnswer = 6;
+                    correctAnswer = 3;
 
                     break;
                 case 10:
@@ -219,12 +219,12 @@ namespace quizapp
                     pictureBox1.Visible = false;
                     button2.Visible = true;
 
-                    button3.Text = "Toimii3";
-                    button2.Text = "Toimii3";
-                    button4.Text = "Toimii3";
-                    button5.Text = "Toimii3";
+                    button3.Text = "Corn Crake";
+                    button2.Text = "Eurasian Eagle-Owl";
+                    button4.Text = "House Sparrow";
+                    button5.Text = "Long-Eared Owl";
 
-                    correctAnswer = 6;
+                    correctAnswer = 4;
 
                     break;
             }
