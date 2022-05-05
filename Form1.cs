@@ -420,7 +420,7 @@ namespace quizapp
         {
             pictureBox1.Visible = false;
             button2.Visible = true;
-            if (questionNum < (listIndex - 1))
+            if (questionNum < (listIndex - 8))
             {
                 button7.Enabled = false;
 
