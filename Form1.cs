@@ -302,7 +302,7 @@ namespace quizapp
                 button4.Visible=false;
                 button5.Visible=false;
                 button7.Visible=false;
-                label2.Visible=false;
+                label3.Visible=false;
             }
             else
             {
