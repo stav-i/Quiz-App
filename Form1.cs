@@ -293,6 +293,10 @@ namespace quizapp
                 textBox2.Visible = true;
                 textBox2.Text = "Play Again?";
                 textBox1.Visible = true;
+                buttonShow.Visible=false;
+                buttonClose.Visible=false;
+                button6.Visible=false;
+                button8.Visible=false;
                 
             }
             else
