@@ -136,11 +136,11 @@ namespace quizapp
 
                     button3.Text = "Corn Crake";
                     button2.Text = "Eurasian Magpie";
-                    button4.Text = "Eurasian Eagla-Owl";
+                    button4.Text = "Eurasian Eagle-Owl";
                     button5.Text = "Long-Eared Owl";
 
                     correctAnswer = 4;
-                    correctBird = "Eurasian Eagla-Owl";
+                    correctBird = "Eurasian Eagle-Owl";
                     break;
                 case 4:
                     //Kirjorastas
