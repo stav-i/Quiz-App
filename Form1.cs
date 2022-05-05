@@ -81,7 +81,7 @@ namespace quizapp
             button5.Enabled = false;
             button6.Enabled = false;
 
-            textBox1.Text = TotalScore.ToString();
+            //textBox1.Text = TotalScore.ToString();
 
         }
         private void questions(int i)
