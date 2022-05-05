@@ -20,10 +20,12 @@ namespace quizapp
         int correctAnswer;
         int totalQuestions = 10;
         int buttonTag;
+        string correctBird;
         public Form1()
         {
             InitializeComponent();
             pictureBox2.Visible = false;
+            label2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,7 +48,7 @@ namespace quizapp
             TotalScore = 0;
             listIndex = 0;
             button3.Enabled = true;
-            button4.Enabled = true;
+            button2.Enabled = true;
             button5.Enabled = true;
             button6.Enabled = true;
             buttonShow.Visible = true;
@@ -54,6 +56,7 @@ namespace quizapp
             textBox3.Visible = false;
             textBox2.Visible = false;
             textBox1.Visible = false;
+            label2.Visible = false;
             
 
         }
@@ -101,7 +104,7 @@ namespace quizapp
                     button5.Text = "European Herring Gull";
 
                     correctAnswer = 3; //= Button that has correct answer
-
+                    correctBird = "Eurasian Magpie";
                     break;
 
                 case 2:
@@ -116,7 +119,7 @@ namespace quizapp
                     button5.Text = "European Herring Gull";
 
                     correctAnswer = 5;
-
+                    correctBird = "European Herring Gull";
                     break;
 
                 case 3:
@@ -131,7 +134,7 @@ namespace quizapp
                     button5.Text = "Long-Eared Owl";
 
                     correctAnswer = 4;
-
+                    correctBird = "Eurasian Eagla-Owl";
                     break;
                 case 4:
                     //Kirjorastas
@@ -145,7 +148,7 @@ namespace quizapp
                     button5.Text = "Corn Crake";
 
                     correctAnswer = 3;
-
+                    correctBird = "White's Thrush";
                     break;
                 case 5:
                     //Kurki
@@ -159,7 +162,7 @@ namespace quizapp
                     button5.Text = "European Herring Gull";
 
                     correctAnswer = 2;
-
+                    correctBird = "Common Crane";
                     break;
                 case 6:
                     //Palokarki
@@ -173,7 +176,7 @@ namespace quizapp
                     button5.Text = "Black Woodpecker";
 
                     correctAnswer = 5;
-
+                    correctBird = "Black Woodpecker";
                     break;
                 case 7:
                     //Ruisraakka
@@ -187,7 +190,7 @@ namespace quizapp
                     button5.Text = "House Sparrow";
 
                     correctAnswer = 4;
-
+                    correctBird = "Corn Crake";
                     break;
                 case 8:
                     //Sarvipollo
@@ -201,7 +204,7 @@ namespace quizapp
                     button5.Text = "European Herring Gull";
 
                     correctAnswer = 2;
-
+                    correctBird = "Long-Eared Owl";
                     break;
                 case 9:
                     //Talitiainen
@@ -215,7 +218,7 @@ namespace quizapp
                     button5.Text = "Black Woodpecker";
 
                     correctAnswer = 3;
-
+                    correctBird = "Great Tit";
                     break;
                 case 10:
                     //Varpunen
@@ -229,7 +232,7 @@ namespace quizapp
                     button5.Text = "Long-Eared Owl";
 
                     correctAnswer = 4;
-
+                    correctBird = "House Sparrow";
                     break;
             }
 
@@ -243,6 +246,7 @@ namespace quizapp
             button2.Visible = true;
             pictureBox2.Visible = false;
             buttonClose.Visible = false;
+            label2.Visible = false;
             
             if (totalQuestions == (listIndex + 1))
             {
@@ -275,8 +279,8 @@ namespace quizapp
         {
            
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
+            label2.Text = correctBird;
+            label2.Visible = true;
 
             buttonShow.Visible = true;
             buttonClose.Visible = true;
@@ -330,6 +334,7 @@ namespace quizapp
             pictureBox2.Visible = false;
             buttonShow.Visible = true;
             buttonClose.Visible = false;
+            label2.Visible = false;
         }
 
         private void button6_Click(object sender, EventArgs e)
