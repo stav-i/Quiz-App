@@ -26,6 +26,8 @@ namespace quizapp
             InitializeComponent();
             pictureBox2.Visible = false;
             label2.Visible = false;
+            //pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,7 +36,10 @@ namespace quizapp
             var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
 
             qRandomed = randomList.ToArray();
-
+            pictureBox2.Visible = true;
+            pictureBox2.Image = new Bitmap(@"birddd.png");
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+           
             questions(qRandomed[0]);
             button1.Visible = false;
             button2.Visible = true;
@@ -71,6 +76,7 @@ namespace quizapp
             button5.Visible = false;
             buttonShow.Visible = false;
             buttonClose.Visible = false;
+
         }
         
         private void CheckAnswer(object sender, EventArgs e)
@@ -241,9 +247,10 @@ namespace quizapp
         {
             SoundPlayer Sounds = new SoundPlayer();
             Sounds.Stop();
-            
+            pictureBox2.Visible = true;
+            pictureBox2.Image = new Bitmap(@"birddd.png");
             button2.Visible = true;
-            pictureBox2.Visible = false;
+            //pictureBox2.Visible = false;
             buttonClose.Visible = false;
             label2.Visible = false;
             
@@ -251,11 +258,23 @@ namespace quizapp
             {
                 button7.Enabled = false;
                 pictureBox2.Visible = false;
-                textBox1.Text = "Game over, you got " + TotalScore + " points";
+                if(TotalScore > 7)
+                {
+                    textBox1.Text = "You got " + TotalScore + " points out of 10. You are a master!";
+                }
+                if (TotalScore > 4 && TotalScore <= 7)
+                {
+                    textBox1.Text = "You got " + TotalScore + " points out of 10. Nice work!";
+                }
+                if (TotalScore <= 4)
+                {
+                    textBox1.Text = "You got " + TotalScore + " points out of 10. You should try again!";
+                }
+
                 TotalScore = 0;
                 button1.Visible = true;
                 textBox2.Visible = true;
-                textBox2.Text = "Start a new game?";
+                textBox2.Text = "Play Again?";
                 textBox1.Visible = true;
                 
             }
@@ -330,10 +349,12 @@ namespace quizapp
 
         private void buttonClose_Click_1(object sender, EventArgs e)
         {
-            pictureBox2.Visible = false;
+            
             buttonShow.Visible = true;
             buttonClose.Visible = false;
             label2.Visible = false;
+            pictureBox2.Visible = true;
+            pictureBox2.Image = new Bitmap(@"birddd.png");
         }
 
         private void button6_Click(object sender, EventArgs e)
