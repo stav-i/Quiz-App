@@ -19,7 +19,7 @@ namespace quizapp
         int TotalScore = 0;
         int correctAnswer;
         int questionNum = 0;
-        //int totalQuestions = 3;
+        int totalQuestions = 10;
         int buttonTag;
         public Form1()
         {
@@ -420,7 +420,7 @@ namespace quizapp
         {
             pictureBox1.Visible = false;
             button2.Visible = true;
-            if (questionNum < (listIndex - 1))
+            if (totalQuestions == (listIndex + 1))
             {
                 button7.Enabled = false;
 
@@ -431,7 +431,9 @@ namespace quizapp
             }
             else
             {
+                
                 listIndex++;
+                label2.Text = listIndex.ToString();
                 questions(qRandomed[listIndex]);
 
                 button3.Enabled = true;
