@@ -28,7 +28,7 @@ namespace quizapp
             pictureBox2.Visible = false;
             label2.Visible = false;
             label3.Visible = false;
-            //pictureBox2.Image = new Bitmap(@"Huuhkaja.jpg");
+            
 
         }
 
@@ -51,7 +51,6 @@ namespace quizapp
             button4.Visible = true;
             button5.Visible = true;
             button6.Visible = true;
-            button7.Visible = true;
             button7.Visible = true;
             button7.Enabled = true;
             
